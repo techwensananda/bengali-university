@@ -7,7 +7,7 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
-import Logo from "../../assets/Bengal_University.png";
+import Logo from "../../assets/image/logo.png";
 const Footer = () => {
   return (
     <footer className="text-gray-600 body-font bg-zinc-900">

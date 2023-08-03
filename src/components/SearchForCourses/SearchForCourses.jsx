@@ -1,4 +1,4 @@
-import Study from "../../assets/study.jpg";
+import Study from "../../assets/image/study.jpg";
 const SearchForCourses = () => {
   return (
     <section
