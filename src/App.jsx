@@ -1,7 +1,13 @@
+import EmailBox from "./components/EmailBox";
+import Events from "./components/Events";
+
 const App = () => {
-  return <div>
-    <h2>hello world</h2>
-  </div>;
+  return (
+    <div>
+      <EmailBox></EmailBox>
+      <Events></Events>
+    </div>
+  );
 };
 
 export default App;
