@@ -145,6 +145,7 @@ const Footer = () => {
                   className=" text-green-700 cursor-pointer"
                 />
               </a>
+              {/* hello */}
               <a className="ml-3 text-gray-500">
                 <FaInstagram
                   size={20}
