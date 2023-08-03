@@ -1,10 +1,15 @@
 import ApplyForAdmission from "./components/ApplyForAdmission";
+import EmailBox from "./components/EmailBox";
+import Events from "./components/Events";
+import UpcomingEvents from "./components/UpcomingEvents";
 
 function App() {
   return (
     <>
-     <ApplyForAdmission></ApplyForAdmission>
-     <h2>hello world</h2>
+      <ApplyForAdmission></ApplyForAdmission>
+      <Events></Events>
+      <UpcomingEvents></UpcomingEvents>
+      <EmailBox></EmailBox>
     </>
   );
 }
