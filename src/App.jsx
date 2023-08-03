@@ -4,6 +4,7 @@ function App() {
   return (
     <>
      <ApplyForAdmission></ApplyForAdmission>
+     <h2>hello world</h2>
     </>
   );
 }
