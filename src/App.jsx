@@ -1,12 +1,12 @@
-import EmailBox from "./components/EmailBox";
-import Events from "./components/Events";
+import ApplyForAdmission from "./components/ApplyForAdmission";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      
-    </div>
+    <>
+     <ApplyForAdmission></ApplyForAdmission>
+     <h2>hello world</h2>
+    </>
   );
-};
+}
 
 export default App;
