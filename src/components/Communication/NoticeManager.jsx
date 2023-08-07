@@ -5,6 +5,7 @@ import swal from "sweetalert";
 export default function NoticeManager() {
 
     const sendMsg = () => {
+    const loading = toast.loading("Sending...")
     const customerMobileNo = {
         number: 8420377092,
         message: `Dear Student,We confirmed that we got your Rs.500 payment. Your Total Paid amount is Rs.500 and Due amount is Rs.950. -- Bengal University`,
@@ -16,11 +17,12 @@ export default function NoticeManager() {
         .then(res => {
             console.log("message res", res)
             if (res.data.return) {
+                toast.success("Message Sent", { id: loading })
                 return swal("Message Delivered!", `Your message has been successfully delivered. 
         
                 Message: ${customerMobileNo.message}`, "success");
             } else {
-                return toast.error(`Something Wrong ,${res.data.message}`)
+                return toast.error(`Something Wrong ,${res.data.message}`, {id: loading})
                 // swal({
                 //     title: "Something Wrong",
                 //     text: `${res.data.message}`,
@@ -219,15 +221,15 @@ export default function NoticeManager() {
                                         Ananda Gharami
                                     </td>
                                     <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                                        jonne62@gmail.com
+                                        anandagarami@gmail.com
                                     </td>
-                                    <td onClick={sendMsg} className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                                        <a
+                                    <td  className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                                        <button
                                             className="text-cyan-500 hover:text-cyan-700"
-                                            href="#"
+                                            onClick={sendMsg}
                                         >
                                             Send
-                                        </a>
+                                        </button>
                                     </td>
                                     <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
                                         <a

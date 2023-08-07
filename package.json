@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
+    "@react-icons/all-files": "^4.1.0",
     "axios": "^1.4.0",
     "headlessui": "^0.0.0",
     "heroicons": "^2.0.18",
